@@ -14,8 +14,8 @@ function Questions() {
         <h2>{currentQuestions.question}</h2>
         <div id="options-container">
             <p>Opções</p>
-            <ul>{currentQuestions.options.map((item)=>(
-                <li>{item}</li>
+            <ul>{currentQuestions.options.map((item, i)=>(
+                <li key={i}>{item}</li>
             ))}</ul>
         </div>
         <button onClick={()=> dispatch({type: "CHANGE_QUESTION"})}>Continuar</button>

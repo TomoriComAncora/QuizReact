@@ -18,3 +18,17 @@
 #questions button{
     border: 1px solid #fff;
 }
+
+ul li{
+    list-style: none;
+    margin-bottom: .5rem;
+    padding: .5rem 1rem;
+    background-color: #333;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .2s;
+}
+
+ul li:hover{
+    scale: 1.1;
+}
