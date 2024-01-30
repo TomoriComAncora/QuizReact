@@ -29,10 +29,10 @@ const quizReducer = (state, action) => {
       };
 
     case "CHANGE_QUESTION":
-      const nextQuestion = state.currentQuestion + 1;
+      const nextQuestion = state.currentQuestions + 1;
       return {
         ...state,
-        currentQuestion: nextQuestion,
+        currentQuestions: nextQuestion,
       };
     default:
       return state;
