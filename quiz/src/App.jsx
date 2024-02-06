@@ -6,6 +6,7 @@ import { QuizContext } from './context/quiz';
 
 // estático
 import './App.css'
+import GameOver from './components/GameOver';
 
 function App() {
   const [quizState, dispatch] = useContext(QuizContext);
@@ -19,6 +20,7 @@ function App() {
       <h1>Quiz app</h1>
       {quizState.gameStage === "Start" && <Welcome/>}
       {quizState.gameStage === "Playing" && <Questions/>}
+      {quizState.gameStage === "End" && <GameOver/>}
     </div>
   )
 }
