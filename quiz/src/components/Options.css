@@ -1,0 +1,14 @@
+#option p{
+    margin-bottom: .7rem;
+    padding: .5rem 1rem;
+    background-color: #3a182a;
+    border-radius: 1rem;
+    cursor: pointer;
+    transition: .2s;
+    opacity: .8;
+}
+
+#option p:hover{
+    scale: 1.1;
+    opacity: 1;
+}
